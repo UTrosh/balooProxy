@@ -1,6 +1,11 @@
 {
     "proxy": {
         "cloudflare": true,
+        "RedisHost": "127.0.0.1:6379",
+        "RedisHaveAuthentification": false,
+        "RedisPass": false,
+        "RedisDB": 0,
+        "UseRedis": true,
         "maxLogLength": 5,
         "adminsecret": "aaa",
         "apisecret": "aaa",
