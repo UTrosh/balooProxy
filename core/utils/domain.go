@@ -119,7 +119,7 @@ func StartRedisPubSub() {
 		case "adddomain":
 			var domain domains.Domain
 			if err := json.Unmarshal([]byte(msg.Payload), &domain); err != nil {
-				fmt.Println("Erreur lors du décodage de la configuration:", err)
+				fmt.Println("error while decoding", err)
 				continue
 			}
 			domains.Config.Domains = append(domains.Config.Domains, domain)
